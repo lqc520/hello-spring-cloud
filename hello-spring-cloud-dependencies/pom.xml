@@ -27,6 +27,7 @@
         <!-- Spring Settings -->
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <zipkin.version>2.10.1</zipkin.version>
+        <admin-boot-admin.version>2.1.6</admin-boot-admin.version>
     </properties>
 
     <dependencyManagement>
@@ -54,6 +55,19 @@
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
             </dependency>
+            <!--  spring-boot-admin -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${admin-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${admin-boot-admin.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
